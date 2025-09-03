@@ -1,6 +1,6 @@
-# Billboard advertisment Schedule Backend Service and the Ads media Player
+## Billboard advertisment Schedule Backend Service and the Ads media Player
 
-📌 Overview
+### 📌 Overview
 
 The Billboard Ad-Sync is a cross-platform digital signage solution designed to Schedule, fetch, and display multimedia advertisements (images, GIFs, and videos) on electronic billboards.
 
@@ -8,14 +8,15 @@ The project integrates with a backend API and WebSocket server to dynamically up
 
 This system is designed to be flexible enough to run on Windows, Linux, and Raspberry Pi, making it deployable in diverse environments.
 
-🎯 Aim & Objectives
+### 🎯 Aim & Objectives
+
 Aim
 
 To build a synchronized, cross-platform digital signage system that can fetch, schedule, and loop multimedia advertisements seamlessly, while ensuring billboards stay updated in real-time.
 
 Objectives
 
-# Advertisement Scheduling
+### Advertisement Scheduling
 
 - Fetch ad schedules from a backend API.
 
@@ -23,7 +24,7 @@ Objectives
 
 - Ensure only active ads are displayed.
 
-# Media Playback
+### Media Playback
 
 - Display images (.jpg, .png) with scaling and smooth rendering.
 
@@ -39,7 +40,7 @@ Listen to backend WebSocket channels for schedule updates.
 
 - Update the playlist dynamically without restarting the player.
 
-# Cross-Platform Support
+### Cross-Platform Support
 
 - Windows (x64) using VLC integration.
 
@@ -47,7 +48,7 @@ Listen to backend WebSocket channels for schedule updates.
 
 - Raspberry Pi deployment as lightweight digital signage clients.
 
-# Seamless User Experience
+### Seamless User Experience
 
 - Smooth transitions between different media types (image → video → GIF → image).
 
@@ -55,9 +56,9 @@ Listen to backend WebSocket channels for schedule updates.
 
 - Fail-safe fallback if an ad fails to load (skip gracefully).
 
-# ⚙️ Tech Stack
+### ⚙️ Tech Stack
 
-# Frontend/Player
+### Frontend/Player
 
 PyQt5
 – GUI framework
@@ -74,7 +75,7 @@ aiohttp
 isodate
 – ISO 8601 duration parsing
 
-# Backend API (integrated with this player)
+### Backend API (integrated with this player)
 
 FastAPI (Python) – REST API + WebSockets
 
@@ -82,7 +83,7 @@ Cloudinary – Media storage (images, GIFs, videos)
 
 MySQL/PostgreSQL – Schedule persistence
 
-🔑 Key Features
+### 🔑 Key Features
 
 ✅ Display images, GIFs, and videos directly from Cloudinary.
 
@@ -96,7 +97,7 @@ MySQL/PostgreSQL – Schedule persistence
 
 ✅ Failsafe fallback (skips broken media gracefully).
 
-# 🚀 How It Works
+### 🚀 How It Works
 
 Player Startup
 
@@ -122,7 +123,7 @@ Dynamic Updates
 
 If new schedules are pushed from the backend via WebSocket, the playlist updates in real-time.
 
-# 🖥️ Target Use Case
+### 🖥️ Target Use Case
 
 Billboards / Digital Signage in public spaces.
 
